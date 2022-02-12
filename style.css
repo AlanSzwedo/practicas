@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+#texto {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: aqua;
+    border: 5px black groove;
+}
+
+.contenedor {
+    background-color: silver;
+    border: 5px black solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    gap: 10px;
+    grid-template-areas: "texto1 texto1 texto2" "texto4 texto3 texto3" "texto5 texto5 texto6";
+
+}
+
+.texto1 {
+    grid-area: texto1;
+}
+.texto2 {
+    grid-area: texto2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    padding-bottom: 20px;
+    background-color: coral;
+    background-image: url(../1/paisaje.jpeg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.texto3 {
+    grid-area: texto3;
+}
+.texto4 {
+    grid-area: texto4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: coral;
+}
+.texto5 {
+    grid-area: texto5;
+}
+.texto6 {
+    grid-area: texto6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: coral;
+}
+
+.imagen {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
